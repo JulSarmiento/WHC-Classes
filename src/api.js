@@ -1,16 +1,8 @@
-// const fetchApi = async (url) => {
-//   try {
-//     fetch(url)
-//       .then(response => response.json())
-//       .then(({results}) => {
-//         const data = results.map(({id, name, gender}) => ({id, name, gender}))
-//         console.log("result", data);
-//       });
-//   } catch (error) {
-//     console.log(error);
-//   }+
-// }
-
+/**
+ * @description fetches data from an api
+ * @param {string} url 
+ * @returns array of objects
+ */
 const fetchApi = async (url) => {
   const response = await fetch(url);
   const { results } = await response.json();
