@@ -1,0 +1,29 @@
+{
+  "name": "crear-npm",
+  "version": "1.0.0",
+  "description": "creando nuestro primer paquete",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start:dev": "node --watch ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulSarmiento/whc-class1.git"
+  },
+  "keywords": [
+    "javascritp",
+    "node",
+    "npm"
+  ],
+  "author": "JulSarmiento",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JulSarmiento/whc-class1/issues"
+  },
+  "homepage": "https://github.com/JulSarmiento/whc-class1#readme",
+  "dependencies": {
+    "is-odd": "^3.0.1"
+  }
+}
