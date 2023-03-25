@@ -1,0 +1,1 @@
+Repositorio destinado para el almacenamiento de las actividades realizadas durantes las clases del curso. 

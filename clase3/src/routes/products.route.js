@@ -15,7 +15,6 @@ router.get('/', (_req, res) => {
 // get product by id
 router.get('/:id', (req, res) => {
   const { id } = req.params;
-  console.log(req.params)
   const product = products.find((product) => product.id === parseInt(id));
   if (product) {
     res.status(httpStatus.OK).json({
@@ -87,6 +86,5 @@ router.delete('/:id', (req, res) => {
     });
   }
 });
-
 
 module.exports = router;
