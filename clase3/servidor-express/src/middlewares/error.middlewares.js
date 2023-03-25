@@ -1,11 +1,12 @@
 
-const errorMiddleware = (err, _req, res, _next) => {
+const errorMiddleware = (err, _req, res, next) => {
   const { statusCode, message } = err;
 
-  res.status(statusCode).send({
+  res.status(statusCode).json({
     status: statusCode,
     message,
   });
+
 }
 
 module.exports = errorMiddleware;
